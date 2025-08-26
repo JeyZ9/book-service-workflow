@@ -16,7 +16,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "books")
-@AllArgsConstructor
+//@AllArgsConstructor
 @NoArgsConstructor
 public class Book {
     @Id
@@ -31,4 +31,10 @@ public class Book {
     
     @NotBlank
     private String img;
+    
+    public Book(String title, String type, String img){
+        this.title = title;
+        this.type = type;
+        this.img = img;
+    }
 }
