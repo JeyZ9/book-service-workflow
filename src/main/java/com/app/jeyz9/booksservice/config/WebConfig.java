@@ -15,7 +15,9 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins("http://localhost:5173", "http://localhost:4173", "https://book-system-1496.onrender.com")
-                        .allowedMethods("GET", "PUT", "DELETE", "OPTIONS", "PATCH");
+                        .allowedMethods("GET", "PUT", "DELETE", "OPTIONS", "PATCH")
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
             }
         };
     }
