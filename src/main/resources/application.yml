@@ -4,9 +4,9 @@ spring:
   application:
     name: "books-service"
   datasource:
-    username: ${PGSQL_USERNAME:book_db_bsab_user}
-    password: ${PGSQL_PASSWORD:486FcARpUrxCFixuEL8A26CmmQ9T8qJ7}
-    url: jdbc:postgresql://${PGSQL_HOST:dpg-d2miuf8gjchc73cmnr2g-a.singapore-postgres.render.com}:${PGSQL_PORT:5432}/book_db_bsab?sslmode=require
+    username: ${PGSQL_USERNAME:postgres}
+    password: ${PGSQL_PASSWORD:257890}
+    url: jdbc:postgresql://${PGSQL_HOST:localhost}:${PGSQL_PORT:5432}/book_db_bsab?sslmode=require
     driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: false
