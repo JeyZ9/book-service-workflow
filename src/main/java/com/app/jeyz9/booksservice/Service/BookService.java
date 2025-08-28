@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface BookService {
     List<Book> getAllBooks();
     Book getBookById(Long id);
-    void addBook(Book book);
+    Book addBook(Book book);
     void editBook(Long id, Book book);
     void deleteBook(Long id);
 }

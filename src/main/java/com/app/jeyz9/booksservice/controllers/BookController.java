@@ -39,9 +39,9 @@ public class BookController {
     }
     
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> addBook(@RequestBody Book newBook) {
-        bookService.addBook(newBook);
-        return new ResponseEntity<>("Add new Book success!", HttpStatus.CREATED);
+    public ResponseEntity<Book> addBook(@RequestBody Book newBook) {
+        Book book = bookService.addBook(newBook);
+        return new ResponseEntity<>(book, HttpStatus.CREATED);
     }
     
     @PutMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)

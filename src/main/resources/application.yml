@@ -6,7 +6,7 @@ spring:
   datasource:
     username: ${PGSQL_USERNAME:postgres}
     password: ${PGSQL_PASSWORD:257890}
-    url: jdbc:postgresql://${PGSQL_HOST:localhost}:${PGSQL_PORT:5432}/book_db_bsab?sslmode=require
+    url: jdbc:postgresql://${PGSQL_HOST:localhost}:${PGSQL_PORT:5432}/book_db_bsab
     driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: false
